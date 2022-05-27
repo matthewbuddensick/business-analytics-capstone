@@ -323,13 +323,13 @@ rand_forest_model <- evaluate_model(rand_forest(), "randomForest")
 plot_yearly_sharpe(rand_forest_model[1], "Random Forest Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_rand_forest_model-1.png)<!-- -->
 
 ``` r
 plot_yearly_alpha(rand_forest_model[3], rand_forest_model[5], "Random Forest Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_alpha_rand_forest_model-1.png)<!-- -->
 
 ``` r
 print(rand_forest_model[2])
@@ -367,23 +367,23 @@ print(rand_forest_model[6])
 xgboost_model <- evaluate_model(boost_tree(), "xgboost")
 ```
 
-    ## [10:43:51] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
-    ## [10:43:51] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
-    ## [10:43:51] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
-    ## [10:43:51] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
-    ## [10:43:52] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+    ## [10:52:22] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+    ## [10:52:22] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+    ## [10:52:22] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+    ## [10:52:22] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+    ## [10:52:22] WARNING: amalgamation/../src/learner.cc:1095: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
 
 ``` r
 plot_yearly_sharpe(xgboost_model[1], "XGBoost Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_xgboost_model-1.png)<!-- -->
 
 ``` r
 plot_yearly_alpha(xgboost_model[3], xgboost_model[5], "XGBoost Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_alpha_xgboost_model-1.png)<!-- -->
 
 ``` r
 print(xgboost_model[2])
@@ -431,13 +431,13 @@ svm_model <- evaluate_model(svm_poly(), "kernlab")
 plot_yearly_sharpe(svm_model[1], "Support Vector Machine")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_svm_model-1.png)<!-- -->
 
 ``` r
 plot_yearly_alpha(svm_model[3], svm_model[5], "Support Vector Machine")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_alpha_svm_model-1.png)<!-- -->
 
 ``` r
 print(svm_model[2])
@@ -479,13 +479,13 @@ knn_model <- evaluate_model(nearest_neighbor(), "kknn")
 plot_yearly_sharpe(knn_model[1], "KNN Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-26-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_KNN_model-1.png)<!-- -->
 
 ``` r
 plot_yearly_alpha(knn_model[3], knn_model[5], "KNN Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-27-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_alpha_KNN_model-1.png)<!-- -->
 
 ``` r
 print(knn_model[2])
@@ -527,13 +527,13 @@ log_model <- evaluate_model(logistic_reg(), "glm")
 plot_yearly_sharpe(log_model[1], "Logistic Regression Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-30-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_logisticregression_model-1.png)<!-- -->
 
 ``` r
 plot_yearly_alpha(log_model[3], log_model[5], "Logistic Regression Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-31-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_alpha_logisticregression_model-1.png)<!-- -->
 
 ``` r
 print(log_model[2])
@@ -575,13 +575,13 @@ c5_rule_model <- evaluate_model(C5_rules(), "C5.0")
 plot_yearly_sharpe(c5_rule_model[1], "Rule-Based Classification Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-34-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_rule_model-1.png)<!-- -->
 
 ``` r
 plot_yearly_alpha(c5_rule_model[3], c5_rule_model[5], "Rule-Based Classification Model")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-35-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_alpha_rule_model-1.png)<!-- -->
 
 ``` r
 print(c5_rule_model[2])
@@ -623,13 +623,13 @@ mlp_model <- evaluate_model(mlp(), "nnet")
 plot_yearly_sharpe(mlp_model[1], "NNET Neural Network")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-38-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_nnet_model-1.png)<!-- -->
 
 ``` r
 plot_yearly_alpha(mlp_model[3], mlp_model[5], "NNET Neural Network")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-39-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_alpha_nnet_model-1.png)<!-- -->
 
 ``` r
 print(mlp_model[2])
@@ -905,34 +905,34 @@ adam_model_prob <- keras_model_adam[4]
 explore_class_probabilities(adam_model_prob)
 ```
 
-    ## [1] "Average Keep Class Probability in 2017: 0.605575732975842"
-    ## [1] "Average Sell Class Probability in 2017: 0.149853147180432"
-    ## [1] "Average Buy Class Probability in 2017: 0.244571118656383"
+    ## [1] "Average Keep Class Probability in 2017: 0.572131723284246"
+    ## [1] "Average Sell Class Probability in 2017: 0.166808196569819"
+    ## [1] "Average Buy Class Probability in 2017: 0.261060082164419"
     ## 
-    ## [1] "Average Keep Class Probability in 2018: 0.315856013996193"
-    ## [1] "Average Sell Class Probability in 2018: 0.403690861278321"
-    ## [1] "Average Buy Class Probability in 2018: 0.28045312211333"
+    ## [1] "Average Keep Class Probability in 2018: 0.292698278548233"
+    ## [1] "Average Sell Class Probability in 2018: 0.392553926226627"
+    ## [1] "Average Buy Class Probability in 2018: 0.314747793384757"
     ## 
-    ## [1] "Average Keep Class Probability in 2019: 0.508152054770598"
-    ## [1] "Average Sell Class Probability in 2019: 0.167771100997925"
-    ## [1] "Average Buy Class Probability in 2019: 0.324076845118451"
+    ## [1] "Average Keep Class Probability in 2019: 0.461118913477375"
+    ## [1] "Average Sell Class Probability in 2019: 0.266539551583784"
+    ## [1] "Average Buy Class Probability in 2019: 0.272341534244044"
     ## 
-    ## [1] "Average Keep Class Probability in 2020: 0.299776707595516"
-    ## [1] "Average Sell Class Probability in 2020: 0.24551327113364"
-    ## [1] "Average Buy Class Probability in 2020: 0.454710021202743"
+    ## [1] "Average Keep Class Probability in 2020: 0.200547128974685"
+    ## [1] "Average Sell Class Probability in 2020: 0.281598224764756"
+    ## [1] "Average Buy Class Probability in 2020: 0.517854642962279"
     ## 
-    ## [1] "Average Keep Class Probability in 2021: 0.331388836815244"
-    ## [1] "Average Sell Class Probability in 2021: 0.361938953399658"
-    ## [1] "Average Buy Class Probability in 2021: 0.306672217590468"
+    ## [1] "Average Keep Class Probability in 2021: 0.284267212308588"
+    ## [1] "Average Sell Class Probability in 2021: 0.377556534750121"
+    ## [1] "Average Buy Class Probability in 2021: 0.33817624957079"
 
 ``` r
 adam_model_sharpe_yearly <- keras_model_adam[1]
 plot_yearly_sharpe(adam_model_sharpe_yearly, "Keras Model with Adam Optimizer")
 ```
 
-    ## Warning: Removed 4 rows containing missing values (geom_col).
+    ## Warning: Removed 2 rows containing missing values (geom_col).
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-46-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_adam_keras_model-1.png)<!-- -->
 
 ``` r
 keras_model_adam[2]
@@ -942,7 +942,7 @@ keras_model_adam[2]
     ## # A tibble: 1 x 3
     ##   sharpe_invest sharpe_stock sharpe_market
     ##           <dbl>        <dbl>         <dbl>
-    ## 1         0.711         1.24         0.611
+    ## 1         0.787         1.24         0.611
 
 ### Stochastic Gradient Descent
 
@@ -1030,34 +1030,34 @@ sgd_model_prob <- keras_model_sgd[4]
 explore_class_probabilities(sgd_model_prob)
 ```
 
-    ## [1] "Average Keep Class Probability in 2017: 0.461568847832927"
-    ## [1] "Average Sell Class Probability in 2017: 0.261718946624087"
-    ## [1] "Average Buy Class Probability in 2017: 0.276712205542986"
+    ## [1] "Average Keep Class Probability in 2017: 0.408269576342457"
+    ## [1] "Average Sell Class Probability in 2017: 0.212614811155426"
+    ## [1] "Average Buy Class Probability in 2017: 0.379115612977054"
     ## 
-    ## [1] "Average Keep Class Probability in 2018: 0.399315973202071"
-    ## [1] "Average Sell Class Probability in 2018: 0.298010529927998"
-    ## [1] "Average Buy Class Probability in 2018: 0.302673498116641"
+    ## [1] "Average Keep Class Probability in 2018: 0.330811502924003"
+    ## [1] "Average Sell Class Probability in 2018: 0.294192269622567"
+    ## [1] "Average Buy Class Probability in 2018: 0.374996226741023"
     ## 
-    ## [1] "Average Keep Class Probability in 2019: 0.446461230634697"
-    ## [1] "Average Sell Class Probability in 2019: 0.293675385415554"
-    ## [1] "Average Buy Class Probability in 2019: 0.259863384541065"
+    ## [1] "Average Keep Class Probability in 2019: 0.527093652340155"
+    ## [1] "Average Sell Class Probability in 2019: 0.198487448668669"
+    ## [1] "Average Buy Class Probability in 2019: 0.274418894201517"
     ## 
-    ## [1] "Average Keep Class Probability in 2020: 0.287132870538433"
-    ## [1] "Average Sell Class Probability in 2020: 0.196730570654153"
-    ## [1] "Average Buy Class Probability in 2020: 0.516136560279861"
+    ## [1] "Average Keep Class Probability in 2020: 0.276048621641317"
+    ## [1] "Average Sell Class Probability in 2020: 0.242240487469044"
+    ## [1] "Average Buy Class Probability in 2020: 0.481710889593886"
     ## 
-    ## [1] "Average Keep Class Probability in 2021: 0.333195694855281"
-    ## [1] "Average Sell Class Probability in 2021: 0.335695927341779"
-    ## [1] "Average Buy Class Probability in 2021: 0.331108364320937"
+    ## [1] "Average Keep Class Probability in 2021: 0.342572832391376"
+    ## [1] "Average Sell Class Probability in 2021: 0.338139542156742"
+    ## [1] "Average Buy Class Probability in 2021: 0.319287631483305"
 
 ``` r
 sgd_model_sharpe_yearly <- keras_model_sgd[1]
 plot_yearly_sharpe(sgd_model_sharpe_yearly, "Keras Model with SGD Optimizer")
 ```
 
-    ## Warning: Removed 1 rows containing missing values (geom_col).
+    ## Warning: Removed 2 rows containing missing values (geom_col).
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-50-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_sgd_keras_model-1.png)<!-- -->
 
 ``` r
 keras_model_sgd[2]
@@ -1067,7 +1067,7 @@ keras_model_sgd[2]
     ## # A tibble: 1 x 3
     ##   sharpe_invest sharpe_stock sharpe_market
     ##           <dbl>        <dbl>         <dbl>
-    ## 1         0.991         1.24         0.611
+    ## 1          1.06         1.24         0.611
 
 ### Adagrad
 
@@ -1155,32 +1155,32 @@ adagrad_model_prob <- keras_model_adagrad[4]
 explore_class_probabilities(adagrad_model_prob)
 ```
 
-    ## [1] "Average Keep Class Probability in 2017: 0.324495271620048"
-    ## [1] "Average Sell Class Probability in 2017: 0.286094769063699"
-    ## [1] "Average Buy Class Probability in 2017: 0.389409958841316"
+    ## [1] "Average Keep Class Probability in 2017: 0.338634901431452"
+    ## [1] "Average Sell Class Probability in 2017: 0.301713725128972"
+    ## [1] "Average Buy Class Probability in 2017: 0.359651370115014"
     ## 
-    ## [1] "Average Keep Class Probability in 2018: 0.329227598005557"
-    ## [1] "Average Sell Class Probability in 2018: 0.322051607161404"
-    ## [1] "Average Buy Class Probability in 2018: 0.348720794892406"
+    ## [1] "Average Keep Class Probability in 2018: 0.384110660073292"
+    ## [1] "Average Sell Class Probability in 2018: 0.341744047118373"
+    ## [1] "Average Buy Class Probability in 2018: 0.274145291680359"
     ## 
-    ## [1] "Average Keep Class Probability in 2019: 0.380028253746411"
-    ## [1] "Average Sell Class Probability in 2019: 0.265979436802722"
-    ## [1] "Average Buy Class Probability in 2019: 0.353992306996906"
+    ## [1] "Average Keep Class Probability in 2019: 0.328213563041082"
+    ## [1] "Average Sell Class Probability in 2019: 0.33932779274053"
+    ## [1] "Average Buy Class Probability in 2019: 0.332458642326177"
     ## 
-    ## [1] "Average Keep Class Probability in 2020: 0.417707386636451"
-    ## [1] "Average Sell Class Probability in 2020: 0.270326382779652"
-    ## [1] "Average Buy Class Probability in 2020: 0.311966230773934"
+    ## [1] "Average Keep Class Probability in 2020: 0.257667554707612"
+    ## [1] "Average Sell Class Probability in 2020: 0.344946285893795"
+    ## [1] "Average Buy Class Probability in 2020: 0.397386159232483"
     ## 
-    ## [1] "Average Keep Class Probability in 2021: 0.393814155033657"
-    ## [1] "Average Sell Class Probability in 2021: 0.318173437601044"
-    ## [1] "Average Buy Class Probability in 2021: 0.28801240665572"
+    ## [1] "Average Keep Class Probability in 2021: 0.373220413213684"
+    ## [1] "Average Sell Class Probability in 2021: 0.334447461934317"
+    ## [1] "Average Buy Class Probability in 2021: 0.292332112434365"
 
 ``` r
 adagrad_model_sharpe_yearly <- keras_model_adagrad[1]
 plot_yearly_sharpe(adagrad_model_sharpe_yearly, "Keras Model with Adagrad Optimizer")
 ```
 
-![](Capstone-Final-Project-Code_files/figure-gfm/unnamed-chunk-54-1.png)<!-- -->
+![](Capstone-Final-Project-Code_files/figure-gfm/plot_yearly_sharpe_adagrad_keras_model-1.png)<!-- -->
 
 ``` r
 keras_model_adagrad[2]
@@ -1190,4 +1190,4 @@ keras_model_adagrad[2]
     ## # A tibble: 1 x 3
     ##   sharpe_invest sharpe_stock sharpe_market
     ##           <dbl>        <dbl>         <dbl>
-    ## 1          1.17         1.24         0.611
+    ## 1          1.45         1.24         0.611
